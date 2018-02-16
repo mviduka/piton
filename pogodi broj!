@@ -1,0 +1,45 @@
+ # This is a guess the number game.
+
+import random
+
+
+
+broj_pokusaja = 0
+
+broj = random.randint(1, 10)
+
+
+while broj_pokusaja < 10:
+
+    print("Pogodite broj!")
+    pokusaj = input()
+
+    pokusaj = int(pokusaj)
+
+
+
+    broj_pokusaja = broj_pokusaja + 1
+
+
+
+    if pokusaj < broj:
+
+         print("Pogrešan unos,pokušajte ponovo!")
+
+
+
+    if pokusaj > broj:
+
+         print("Pogrešan unos,pokušajte ponovo!")
+
+
+    if pokusaj == broj:
+
+        break
+
+
+if pokusaj == broj:
+    broj_pokusaja = str(broj_pokusaja)
+
+    print("Pogodak!Pogodili ste iz " + broj_pokusaja + " puta!!")
+
