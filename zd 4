@@ -1,0 +1,17 @@
+#Kolokvij 2 Zadatak 4
+from math import sqrt
+
+x_1 = int(input("Unesite X kordinatu prve tocke: "))
+y_1 = int(input("Unesite Y koridnatu prve tocke: "))
+x_2 = int(input("Unesite X kordinatu druge tocke: "))
+y_2 = int(input("Unesite Y koridnatu druge tocke: "))
+
+T_1 = (x_1,y_1)
+T_2 = (x_2,y_2)
+
+def udaljenost_tocaka(T_1,T_2):
+    D = sqrt((x_1-x_2)**2+(y_1-y_2)**2)
+    print("Udaljenost tocaka {} {} iznosi {} jedinicnih duzina.".format(T_1,T_2,D))
+
+
+udaljenost_tocaka(T_1,T_2)
