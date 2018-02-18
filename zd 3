@@ -1,0 +1,20 @@
+#Kolokvij 2 Zadatak 3
+
+f_ulaz = open("D://Moje//SIT//Semestar I//Osnove Programiranja//Kolokvij2A//ulaz.txt")
+lista = []
+lista2 = []
+lista = f_ulaz.read().split()
+
+
+for i in lista:
+    if i.isnumeric():
+        lista2.append(int(i))
+        lista.remove(i)
+
+pozicija = lista2.index((min(lista2)))
+
+
+print("Grad s najmanje stanovnika je {} sa {} stanovnika.".format(lista[pozicija],lista2[pozicija]))
+
+
+f_ulaz.close()
