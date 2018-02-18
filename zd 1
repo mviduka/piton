@@ -1,0 +1,37 @@
+#Kolokvij2_zd01
+
+import random
+
+n = int(input("Unesite cijeli broj veci od 0: "))
+lista1 = []
+lista2 = []
+brojac1 = 0
+brojac2 = 0
+
+
+if n > 0:
+    for i in range (n):
+        s = random.randint(0,1)
+        lista1.append(s)
+    for i in range (n):
+        s = random.randint(0,1)
+        lista2.append(s)
+
+    for i in (lista1):
+        if i is 1:
+            brojac1+=1
+    for i in (lista2):
+        if i is 1:
+            brojac2+=1
+
+    if (brojac1 > brojac2) :
+        print("Generirane su lsite {} {} a lista sa više jedinica je {}.".format(lista1,lista2,lista1))
+    elif (brojac2 > brojac1):
+        print("Generirane su lsite {} {} a lista sa više jedinica je {}.".format(lista1,lista2,lista2))
+    else:
+        print("Generirane su lsite {} {} i sadrze isti broj jedinica.".format(lista1,lista2))
+
+    
+else:
+    print("Broj mora biti veći od 0.")
+
