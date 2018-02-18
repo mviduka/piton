@@ -1,0 +1,23 @@
+#Kolokvij 2 Zadatak 5
+
+from turtle import *
+
+n = int(input("Unesite cijeli broj izmedu 0 i 300: "))
+
+def kvadrat(n):
+    for i in range (4):
+        fd(n)
+        lt(90)
+
+pu()
+goto(-(n/2),-(n/2))
+pd()
+kvadrat(n)
+pu()
+fd(n/2)
+pd()
+colormode(255)
+color("Black")
+begin_fill()
+circle(n/2)
+end_fill()
